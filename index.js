@@ -30,7 +30,7 @@ async function run() {
     const userCollection = client.db('sunflowerDB').collection('users');
     const applicationCollection = client.db('sunflowerDB').collection('applications');
 
-// for fetch data
+// for the fetch data
 app.get('/sunflower',async(req, res)=>{
     const cursor = sunflowerCollection.find();
     const result = await cursor.toArray();
